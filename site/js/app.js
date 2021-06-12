@@ -5,9 +5,9 @@ nameinput.addEventListener('submit',updateName);
 function updateName(event){
 	name = document.getElementById("username").value;
 	if(name === ""){
-		alert("あなたの番号を入力してください.");
+		alert("Please input your experiment ID obtained from Goolge form.");
 	}else{
-		alert("番号が更新されました.");
+		alert("Experiment ID updated.");
 		window.location.href = "./instructions.html?id="+name;
 	}
 	event.preventDefault();

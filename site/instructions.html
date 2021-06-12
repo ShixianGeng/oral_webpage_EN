@@ -6,7 +6,7 @@
 		import name from './index.html';
 	</script>
 	<script defer src="js/instructions.js"></script>
-	<title>口·舌の動きの撮影</title>
+	<title>Oral Movements Video Recording</title>
 	<style>
 		#page-wrap {
 		     max-width: 800px;
@@ -34,33 +34,33 @@
 
   		firebase.initializeApp(firebaseConfig);
 	</script>
-<h3>あなたの番号:</h3>
+<h3>Your ID:</h3>
 <p id = "id_indicator"></p>
-<p><b>以下の動画の口，及び舌の動きを真似してください．その様子を<span style="color:red">スマートフォン</span>で撮影してください．</b></p>
+<p><b>Please record the following oral movements as instructed in the video using a <span style="color:red">smartphone</span>．</b></p>
 <ul>
-	<li>顔全体を写す必要はありませんが，以下の動画のように，口と舌の全体が写るようにしてください．</li>
-	<li>できない舌の動きがあっても構いません．できる範囲で舌を動かしてみてください．</li>
-	<li>撮影が終了したら，動画をアップロードしてください．</li>
+	<li>You don't have to record the entire face, but please make sure you record the lower half of the face and the tongue similar to the instruction video．</li>
+	<li>It's OK if you cannot make the movement. In this case, please record your attempt．</li>
+	<li>After recording, please upload your video with the upload button．</li>
 </ul>
 <div class ="container">
 <video width="480" height="360" controls>
-  <source src="instructions_v3.mp4" type="video/mp4">
-あなたのブラウザはビデオタグをサポートしていません．
+  <source src="instructions_EN.mp4" type="video/mp4">
+Your browser does not support this video．
 </video>
 <div class="text">
 	<ul>
-	<li><b>動画のまとめ</b></li>
+	<li><b>Summary of instructions</b></li>
 	</ul>
 	<ol>
-	<li>できるだけ舌を右に突き出す (3秒ほど)</li>
-	<li>できるだけ舌を左に突き出す (3秒ほど)</li>
-	<li>できるだけ前へ舌を突き出す (3秒ほど)</li>
-	<li>口をすぼめる (3秒ほど)</li>
-	<li>頬を膨らませる (3秒ほど)</li>
+	<li>Stick tongue out to the right (For 3 or more seconds)</li>
+	<li>Stick tongue out to the left (For 3 or more seconds)</li>
+	<li>Stick tongue out to the middle (For 3 or more seconds)</li>
+	<li>Whistling [You don't have to make a sound!] (For 3 or more seconds)</li>
+	<li>Puff out cheeks (For 3 or more seconds)</li>
 </ol>
 	</div>
 </div>
-<h4 id = "upload">動画をアップロードする</h4>
+<h4 id = "upload">Upload</h4>
 	<form class="form-inline" id="form">
 		<input type="file" id="vid" name="filename">
 		<input type="submit">

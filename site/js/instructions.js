@@ -9,15 +9,15 @@ id_indicator.innerText = name;
 function uploadVideo(){
 	return function curried_function(event){
 		if(name === ""){
-			alert("あなたの番号を入力してください.");
+			alert("Please input your ID");
 		}else{
 			var file = document.getElementById("vid").files[0];
 			var ref = storageRef.child(name+'/'+Date.now()+'/');
 			var upload = document.getElementById("upload");
-			upload.innerText = "アップロード中です...ブラウザを閉じないでください."
+			upload.innerText = "Uploading...Please don't close the browser"
 			ref.put(file).then((snapshot) =>{
-			alert("アップロード完了.ありがとうございました.");
-			upload.innerText = "アップロード完了. ありがとうございました."
+			alert("Finished upload. Thank you very much!");
+			upload.innerText = "Finished upload. Thank you very much!."
 			});
 			event.preventDefault();
 
